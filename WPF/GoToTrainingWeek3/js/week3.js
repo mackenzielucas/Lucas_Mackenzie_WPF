@@ -15,7 +15,7 @@ Section 01
 // Create our "fruit bowl"
 //Array - hold multiple variables under one name - variable of variables
 
-var bowlofFruit = ["apple", "banana", "pear", "peach", "pear"];
+var bowlofFruit = ["apple", "banana", "pear", "peach", "pear", "apple", "pear"];
 
 console.log(bowlofFruit);
 
@@ -37,7 +37,10 @@ var totalNumPears = 0;
 //If it is, lets add it to a total number of pears
 //If Statement - Conditional
 
+/*OLD SCHOOL
+
 if(bowlofFruit[0]==="pear" ){
+
     //this code will run if the condition is true
     //then add 1 to our total number of pears
     totalNumPears++;
@@ -65,5 +68,21 @@ if(bowlofFruit[4]==="pear"){
     totalNumPears++;
 
 }
+ */
+
+//Create a loop for repetitive code
+
+//For Loop - runs a specific number of times
+
+//for(initializing variable; condition to test; what to do after the code runs){}
+
+for(var i=0; i<bowlofFruit.length; i++){
+    //As long as condition is true, then the code will run
+    console.log("Inside of For Loop");
+    console.log(i);
+    console.log(bowlofFruit[i]);
+
+}
+
 
 console.log(totalNumPears+" pears in our bowl");
